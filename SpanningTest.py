@@ -7,9 +7,6 @@ import numpy as np
 
 def SpanningTest(benchmark_assets, test_assets):
 
-    # benc_asset = pd.read_csv('benchmark_asset.csv', index_col='Date', parse_dates=['Date'])[-25:]
-    # test_asset = pd.read_csv('test_asset.csv', index_col='Date', parse_dates=['Date'])[-25:]
-
     benc_asset = benchmark_assets
     test_asset = test_assets
 
