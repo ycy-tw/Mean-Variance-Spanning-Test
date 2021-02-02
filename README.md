@@ -8,9 +8,11 @@ In Financial field, portfolio management is one of the boradly discussed issue.
 
 Here are two main function
 1. SpanningTest(self, benchmark_assets, test_assets)
+
 2  EfficientFrontierComparison(self, portfolio1, portfolio2, p1_name, p2_name)
 
 Spannging test can help us specific whether the assets about to add in our portfolio improve performance of our original portfolio.
+
 Comparing the efficient frontier of original portfolio and added new assets portfolio show more intuitive result.
 
 
@@ -31,7 +33,7 @@ import pandas as pd
 original_assets = pd.read_csv('original_assets.csv', index_col='Date', parse_dates=['Date'])
 new_assets = pd.read_csv('new_assets.csv', index_col='Date', parse_dates=['Date'])
 ```
-
+glimpse data
 ```python
 original_assets.head()
 ```
