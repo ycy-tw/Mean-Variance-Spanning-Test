@@ -15,7 +15,7 @@ class Investment:
         pass
 
 
-    def EfficientFrontierComparison(self, portfolio1, portfolio2, p1_name, p2_name):
+    def EfficientFrontierComparison(self, portfolio1, portfolio2):
 
         def ori_standard_deviation(weights):
             return np.sqrt(reduce(np.dot, [weights, ori_covariance_matrix, weights.T]))
@@ -101,12 +101,12 @@ class Investment:
         ax = fig.add_subplot()
 
         # plot efficient frontier
-        ax.plot(ori_risk_list, ori_return_list, linewidth=2, linestyle='--', color='#e05151', label=f'{p1_name} assets')
-        ax.plot(com_risk_list, com_return_list, linewidth=2, linestyle='--', color='#548cd1', label=f'{p2_name} assets')
+        ax.plot(ori_risk_list, ori_return_list, linewidth=2, linestyle='--', color='#e05151', label='K assets')
+        ax.plot(com_risk_list, com_return_list, linewidth=2, linestyle='--', color='#548cd1', label='K+N assets')
 
         # plot M.V.P.
-        ax.plot(ori_mvp_risk, ori_mvp_return, 'o', color='r', markerfacecolor='r',  markersize=10, label=f'{p1_name} assets - M.V.P. ')
-        ax.plot(com_mvp_risk, com_mvp_return, 'o', color='b', markerfacecolor='b',  markersize=10, label=f'{p2_name} + K assets - M.V.P. ')
+        ax.plot(ori_mvp_risk, ori_mvp_return, 'o', color='r', markerfacecolor='r',  markersize=10, label='K assets - M.V.P. ')
+        ax.plot(com_mvp_risk, com_mvp_return, 'o', color='b', markerfacecolor='b',  markersize=10, label='K+N assets - M.V.P. ')
 
         ax.spines['right'].set_visible(False)
         ax.spines['top'].set_visible(False)
