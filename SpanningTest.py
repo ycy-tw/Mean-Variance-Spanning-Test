@@ -180,3 +180,4 @@ class Investment:
         print(output_table)
 
         return result
+    
