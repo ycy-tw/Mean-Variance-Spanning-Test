@@ -47,12 +47,12 @@ new_assets.head()
 
 3. Do spanning test
 ```
-working.SpanningTest(df1, df2)
+working.SpanningTest(original_assets, new_assets)
 ```
 ![](./test/st_3.png)
 
 4. Compare efficient frontier by plotting
 ```
-working.EfficientFrontierComparison(df1, df2, 'K', 'N+K')
+working.EfficientFrontierComparison(original_assets, new_assets)
 ```
 ![](./test/st_4.png)
