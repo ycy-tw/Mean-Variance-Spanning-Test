@@ -9,7 +9,7 @@ In Financial field, portfolio management is one of the boradly discussed issue.
 Here are two main function
  1. SpanningTest(self, benchmark_assets, test_assets)
  
- 2  EfficientFrontierComparison(self, portfolio1, portfolio2, p1_name, p2_name)
+ 2. EfficientFrontierComparison(self, portfolio1, portfolio2, p1_name, p2_name)
 
 Spannging test can help us specific whether the assets about to add in our portfolio improve performance of our original portfolio.
 
