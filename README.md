@@ -7,9 +7,9 @@
 In Financial field, portfolio management is one of the boradly discussed issue.
 
 Here are two main function
- 1. SpanningTest(self, benchmark_assets, test_assets)
+ 1. SpanningTest
  
- 2. EfficientFrontierComparison(self, portfolio1, portfolio2, p1_name, p2_name)
+ 2. EfficientFrontierComparison
 
 Spannging test can help us specific whether the assets about to add in our portfolio improve performance of our original portfolio.
 
@@ -18,6 +18,11 @@ Comparing the efficient frontier of original portfolio and added new assets port
 
 **Quick Guide**
 ---
+```
+git clone https://github.com/ycy-tw/Mean-Variance-Spanning-Test.git
+```
+Demo below can be found in 'test' folder
+
 1. Import class
 ```python
 from SpanningTest import Investment
