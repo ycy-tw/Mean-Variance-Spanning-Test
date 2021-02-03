@@ -21,7 +21,7 @@ Comparing the efficient frontier of original portfolio and added new assets port
 ```
 git clone https://github.com/ycy-tw/Mean-Variance-Spanning-Test.git
 ```
-Demo below can be found in 'test' folder
+**Demo below can be found in 'test' folder**
 
 1. Import class
 ```python
