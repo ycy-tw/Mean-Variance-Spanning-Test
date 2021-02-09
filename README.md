@@ -23,14 +23,14 @@ git clone https://github.com/ycy-tw/Mean-Variance-Spanning-Test.git
 ```
 **Demo below can be found in 'test' folder**
 
-** 1. Import class
+**1. Import class**
 ```python
 from SpanningTest import Investment
 
 working = Investment()
 ```
 
-**2. Load the data of original portfolio and assets prepared to add
+**2. Load the data of original portfolio and assets prepared to add**
 
 ```
 import pandas as pd
@@ -50,13 +50,13 @@ new_assets.head()
 ```
 ![](./test/st_2.png)
 
-**3. Do spanning test
+**3. Do spanning test**
 ```
 working.SpanningTest(original_assets, new_assets)
 ```
 ![](./test/st_3.png)
 
-**4. Compare efficient frontier by plotting
+**4. Compare efficient frontier by plotting**
 ```
 working.EfficientFrontierComparison(original_assets, new_assets)
 ```
